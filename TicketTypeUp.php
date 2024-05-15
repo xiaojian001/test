@@ -116,6 +116,7 @@ class TicketTypeUp extends \app\common\service\Loger
     public function compensationApply($arrParam){
         Db::startTrans();
         try {
+            //测试
             $request = Request::instance();
             $strIp = $request->ip();
             if($arrParam['ticket_id']==""){
